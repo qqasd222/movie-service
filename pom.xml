@@ -56,7 +56,7 @@
 		<dependency>
 			<groupId>com.alibaba.cloud</groupId>
 			<artifactId>spring-cloud-starter-acm</artifactId>
-			<version>1.0.0</version>
+			<version>1.0.7</version>
 		</dependency>
 
 		<dependency>
