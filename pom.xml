@@ -53,10 +53,17 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<dependency>
+<!--		<dependency>
 			<groupId>com.alibaba.cloud</groupId>
 			<artifactId>spring-cloud-starter-acm</artifactId>
 			<version>1.0.7</version>
+		</dependency>-->
+
+		<!--ACM-->
+		<dependency>
+			<groupId>com.alibaba.edas.acm</groupId>
+			<artifactId>acm-sdk</artifactId>
+			<version>1.0.9</version>
 		</dependency>
 
 		<dependency>

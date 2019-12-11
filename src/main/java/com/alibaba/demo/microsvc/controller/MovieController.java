@@ -1,5 +1,6 @@
 package com.alibaba.demo.microsvc.controller;
 
+import com.alibaba.demo.microsvc.config.ACMConfig;
 import com.alibaba.demo.microsvc.model.McClue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -16,14 +17,10 @@ public class MovieController {
 	@Autowired
 	McClueRepository mcClueRepository;
 
-//	@Value("${test.value}")
-//	String test;
-
 	@RequestMapping("/list-movies")
-	public @ResponseBody Iterable<McClue> listMovies() {
-//		System.out.println(test);
-        return mcClueRepository.findAll();
+	public String listMovies() {
+		Object testValue = ACMConfig.getPorpertiesValue("test.value");
+		System.out.println(testValue);
+		return (String)testValue;
 	}
-	
-
 }
